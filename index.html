@@ -10,32 +10,53 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
    </head>
    <body>
-        <header>
-            <h1>Build your Infoblock</h1>
-        </header>
         <div class="container">
+        <header>
+            <div class="jumbotron">
+                <h1 class="display-3">Build your InfoBlock!</h1>
+                <p class="lead">Thank you for partnering to enhace the impact of Yass Valley.</p>
+                <hr class="my-4">
+                <p>These information blocks serve two purposes - it will build the presence of Yass Valley website and ensure that your contribution to making Yass, Yass recognised.</p>
+                <p>Use the form below to build your own Info block to include on your website. If you can edit the HTML code of your page, simply paste the generated code and save your site. Otherwise, get in touch with your web developer to install the code for you.</p>
+            </div>
+        </header>
         <section id="form">
-            <form class="form-infoblock">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-        </section>
+ <form>
+    <div class="form-group row">
+      <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputName" placeholder="Name">
+        <small id="nameHelp" class="form-text text-muted">Enter the name of your business, organisation, event or activity.</small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputCategory" class="col-sm-2 col-form-label">Category</label>
+      <div class="col-sm-10">
+          <select id="inputCateogry">
+              <option value="stay">Stay</option>
+              <option value="food-and-wine">Food &amp; Wine</option>
+              <option value="see-and-do">See &amp; Do</option>
+              <option value="events">Events</option>
+          </select>
+          <small id="categoryHelp" class="form-text text-muted">Select the category that your listing appears in on the Yass Valley site.</small>
+      </div>
+     </div>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Generate</button>
+      </div>
+    </div>
+  </form>        </section>
         <section id="preview">
         </section>
         <section id="code">
+             <pre>
+             </pre>
         </section>
-        </div>
+        
         <footer>
             <p>Built by Threesides Marketing</p>
         </footer>
+        </div>
    </body>
 </html>
