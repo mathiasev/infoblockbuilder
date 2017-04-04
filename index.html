@@ -51,16 +51,17 @@
             <div id="Yass-Valley-Information-Block">
                 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
                 <style>
-                    #Yass-Valley-Information-Block {width:100%; display:inline-block; color: #ffffff; font-family: 'Open Sans', sans-serif;}
-                    #Yass-Valley-Information-Block header #Yass-Valley-Logo {width:80px; display:inline-block; float:left;}
-                    #Yass-Valley-Information-Block header #Yass-Valley-Location { width: calc(100% - 80px); display:inline-block; float:right; text-align:right;}
-                    #Yass-Valley-Information-Block header #Yass-Valley-Location h1 { font-family: 'Roboto Slab', serif; }
-                </style>
+                    @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
+                    #Yass-Valley-Information-Block {width:100% !important; display:inline-block !important; background-color: #ffffff !important; font-family: 'Open Sans', sans-serif !imporant;}
+                    #Yass-Valley-Information-Block header #Yass-Valley-Logo {width:30% !important; min-width:80px !important; display:inline-block !important; float:left !important;}
+                    #Yass-Valley-Information-Block header #Yass-Valley-Location { width: 70% !important; display:inline-block !important; float:right !important; text-align:right !important;}
+                    #Yass-Valley-Information-Block header #Yass-Valley-Location h1 { font-family: 'Roboto Slab', serif !important; }
+                         </style>
                 <header class="stay">
                     <div id="Yass-Valley-Logo">
                         <img src="https://www.yassvalley.com.au/wp-content/themes/yass/assets/img/logo.png">
                     </div>
-                    <div id="Yass-Valley-Information">
+                    <div id="Yass-Valley-Location">
                         <p>Enjoy your time at</p>
                         <h1>Yass Valley</h1>
                     </div>
